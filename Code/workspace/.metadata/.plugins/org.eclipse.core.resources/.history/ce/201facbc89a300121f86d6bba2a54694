@@ -1,0 +1,21 @@
+package com.dao;
+
+import java.sql.*;
+public class Logindao {
+
+	public static boolean validate(Login b){
+		boolean status=false;
+		try{
+			Connection con=ConnectionProvider.getCon();
+			
+			PreparedStatement ps=con.prepareStatement("select * from Users where user_id=? and user_pswrd=? ");
+			ps.setString(1,bean.getEmail());
+			ps.setString(2, bean.getPass());
+			
+			ResultSet rs=ps.executeQuery();
+			status=rs.next();
+			
+		}catch(Exception e){}
+		return status;
+	}
+}

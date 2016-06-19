@@ -1,0 +1,14 @@
+package com.tgmc;
+
+public class Vouchertl {
+
+	String vouid;
+	String exptype;
+	float exp;
+	String notes;
+	String info;
+	
+	
+	
+	
+}

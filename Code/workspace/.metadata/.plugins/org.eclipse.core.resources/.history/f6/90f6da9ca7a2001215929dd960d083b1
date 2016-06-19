@@ -1,0 +1,39 @@
+package com.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import com.tgmc.Voucher;
+import com.util.ConnectionPool;
+
+public class Voucherdao {
+
+	String insertVoucher= "insert into Voucher values(?,?,?,?,?)";
+	
+	
+	
+	
+	
+	Connection con=ConnectionPool.getConnection();
+	public boolean createVoucher(Voucher p)
+	{
+		try{
+		PreparedStatement ps = con.prepareStatement(insertVoucher);
+	
+		ps.setString(1, p.getVid());
+		ps.setString(2, p.getType());
+		ps.setFloat(3, p.getExp());
+	
+		ps.setString(4, p.getText());
+		ps.setInt(5, p.getF());
+		ps.executeUpdate();
+		
+		}
+		catch(Exception e){
+			e.printStackTrace();
+			return false;
+		}
+		return false;
+	}
+	
+}

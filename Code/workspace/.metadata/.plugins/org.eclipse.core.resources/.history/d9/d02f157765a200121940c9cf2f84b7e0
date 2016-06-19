@@ -1,0 +1,80 @@
+package com.dao;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.tgmc.Query;
+
+public class Querydao {
+	String insertQuery= "insert into Queries values(?,?,?,?)";
+	String selectQuery = "select * from Queries where SAL_ID=?";
+	String selectAll = "select * from Queries";
+	public boolean createQuery(Query p)
+	{
+		try{
+		PreparedStatement ps = con.prepareStatement(insertQuery);
+		ps.setString(1, p.getName());
+		ps.setFloat(2, p.getEmail());
+		ps.setFloat(3, p.getLimit());
+		
+		ps.executeUpdate();
+		}
+		catch(Exception e){
+			e.printStackTrace();
+			return false;
+		}
+		return false;
+	}
+	 public Query selectQuery(String id){
+	    	
+	    	try{
+	    		PreparedStatement ps = con.prepareStatement(selectQuery);
+	    		ps.setString(1, id);
+	    		ResultSet rs =ps.executeQuery();
+	    		if(rs.next())
+	    		{
+	    			Query p = new Query();
+	    			p.setId(rs.getString(1));
+	    			p.setSal(rs.getFloat(2));
+	    			p.setLimit(rs.getFloat(3));
+	    			return p;
+	    		}
+	    		else
+	    			return null;
+	    		}catch(Exception e){
+	    			e.printStackTrace();
+	    			return null;
+	    		}
+	    	
+	    }
+	 public List<Query> findAll(){
+	    	
+		    List<Query> list = new ArrayList<Query>();
+	    	try{
+	    		PreparedStatement ps = con.prepareStatement(selectAll);
+	    	  
+	    		ResultSet rs =ps.executeQuery();
+	    		while(rs.next())
+	    		{
+	    			Query p = new Query();
+	    			p.setId(rs.getString(1));
+	    			p.setSal(rs.getFloat(2));
+	    			p.setLimit(rs.getFloat(3));
+	    			list.add(p);
+	    		}
+	    		return list;
+	    		}catch(Exception e){
+	    			e.printStackTrace();
+	    			return null;
+	    		}
+	    	
+	    }
+	
+	
+	
+	
+	
+	
+}

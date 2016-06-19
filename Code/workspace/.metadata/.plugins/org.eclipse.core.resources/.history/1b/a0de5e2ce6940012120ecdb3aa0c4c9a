@@ -1,0 +1,35 @@
+<%@page import="prjct.man.Employeedao"%>
+<%@page import="prjct.tgmc.Employee"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+
+
+
+</head>
+<body>
+<% 
+ String eid = request.getParameter("id");
+String first = request.getParameter("fname");
+String last = request.getParameter("lname");
+String gender = request.getParameter("gen");
+String date = request.getParameter("dob");
+String marry = request.getParameter("marital");
+String bgrp = request.getParameter("bgroup");
+String phne = request.getParameter("phone");
+String house = request.getParameter("hno");
+String cityn = request.getParameter("city");
+String pincode = request.getParameter("pin");
+String district = request.getParameter("dist");
+String state1 = request.getParameter("state");
+String country1 = request.getParameter("country");
+Employee p = new Employee(eid,first,last,gender,date,marry,bgrp,phne,house,cityn,pincode,district,state1,country1);
+Employeedao pDAO = new Employeedao();
+pDAO.updateEmployee(p);
+%>
+</body>
+</html>

@@ -1,0 +1,45 @@
+package com.tgmc;
+
+public class Department {
+	String did;
+	String edid;
+	public String getEdid() {
+		return edid;
+	}
+	public void setEdid(String edid) {
+		this.edid = edid;
+	}
+int desg;
+	String name;
+	
+	public Department(String did, String id, int desg, String name) {
+		super();
+		this.did = did;
+		this.edid = id;
+		this.desg = desg;
+		this.name = name;
+	}
+	public String getDid() {
+		return did;
+	}
+	public void setDid(String did) {
+		this.did = did;
+	}
+	
+	public String getDesg() {
+		return desg;
+	}
+	public void setDesg(String desg) {
+		this.desg = desg;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Department() {
+		super();
+	}
+		
+}

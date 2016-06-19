@@ -1,0 +1,48 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1" import="com.dao.*,com.tgmc.*, com.util.*"%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<%
+String UN=(String)session.getAttribute("USERNAME");
+String PW=(String)session.getAttribute("PASSWORD");
+
+if (UN.equals("ravi")&& PW.equals("ravi"))
+{
+
+}else
+out.println("Hello");
+%>
+<%
+  
+
+		String eid = request.getParameter("emp");
+		String first = request.getParameter("fname");
+		String last = request.getParameter("lname");
+		String gender = request.getParameter("gen");
+		String date = request.getParameter("dob");
+		String marry = request.getParameter("marital");
+		String bgrp = request.getParameter("bgrp");
+		String email = request.getParameter("email");
+		String phne = request.getParameter("phone");
+		String street = request.getParameter("street");
+		String cityn = request.getParameter("city");
+		String pincode = request.getParameter("pin");
+		String state1 = request.getParameter("state");
+		String country1 = request.getParameter("country");
+
+		Employee p = new Employee(eid,first,last,gender,date,marry,bgrp,phne,email,street,cityn,pincode,state1,country1);
+		  Employeedao pDAO = new Employeedao(); 
+		  
+if(pDAO.updateEmployee(p)){
+
+	%>
+
+</body>
+</html>

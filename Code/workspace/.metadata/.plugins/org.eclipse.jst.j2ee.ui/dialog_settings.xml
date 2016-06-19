@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="false" key="J2EE_EXPORT_OVERWRITE"/>
+	<item value="true" key="J2EE_EXPORT_SOURCE"/>
+	<list key="J2EE_IMPORT_null">
+		<item value="C:\Documents and Settings\Tathari\My Documents\My Pictures\tgmc\TechMavericks.war"/>
+		<item value="C:\Documents and Settings\Tathari\Desktop\Tgmcfinalnw.war"/>
+		<item value="C:\Documents and Settings\Tathari\My Documents\tgmc sample1.war"/>
+		<item value="C:\Documents and Settings\Tathari\My Documents\Downloads\Tgmcfinalss.war"/>
+		<item value="C:\Documents and Settings\Tathari\My Documents\Downloads\tgmc sample1(2).war"/>
+		<item value="C:\Documents and Settings\Tathari\Desktop\Employeeexpensemanagement.war"/>
+	</list>
+	<list key="J2EE_EXPORT_JST_EAR">
+		<item value="C:\Documents and Settings\Tathari\Desktop\TGMC\TechMavericksEAR.ear"/>
+		<item value="C:\Documents and Settings\Tathari\My Documents\My Pictures\tgmc\TechMavericksEAR.ear"/>
+	</list>
+	<list key="J2EE_EXPORT_JST_WEB">
+		<item value="C:\Documents and Settings\Tathari\Desktop\TGMC\TechMavericks.war"/>
+		<item value="C:\Documents and Settings\Tathari\My Documents\My Pictures\tgmc\TechMavericks.war"/>
+		<item value="C:\Documents and Settings\Tathari\My Documents\My Pictures\Tgmcfinal.war"/>
+		<item value="G:\tgmc prjct\Tgmcfinal.war"/>
+		<item value="D:\Tgmcfinal.war"/>
+		<item value="I:\Tgmcfinal.war"/>
+	</list>
+	<list key="MRU_RUNTIME_STORE">
+		<item value="IBM WASCE v3.0"/>
+	</list>
+</section>

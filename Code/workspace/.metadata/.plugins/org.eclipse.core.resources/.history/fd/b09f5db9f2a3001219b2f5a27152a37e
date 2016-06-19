@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl" xml:lang="pl">
+<head>
+
+<title>mavericks-admin</title>
+<link rel="stylesheet" type="text/css" href="scrstyles/adminpanel.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="scrstyles/adminpanelnav.css" media="screen" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".box .h_title").not(this).next("ul").hide("normal");
+	$(".box .h_title").not(this).next("#home").show("normal");
+	$(".box").children(".h_title").click( function() { $(this).next("ul").slideToggle(); });
+});
+</script>
+</head>
+<body>
+<%
+String u_name="";
+String p_word="";
+
+u_name=request.getParameter("username");
+p_word=request.getParameter("password");
+
+session.setAttribute("USERNAME",u_name);
+session.setAttribute("PASSWORD",p_word);
+String UN =(String)session.getAttribute("USERNAME");
+String PW =(String)session.getAttribute("PASSWORD");
+
+
+
+%>
+<% if (UN.equals("admin001") && PW.equals("abc12345")) {
+%>
+<jsp:include page="adminpanel.jsp" />
+<% }
+
+else {
+		out.println("Hello"); 
+	}
+%>
+
+
+</body>
+</html>

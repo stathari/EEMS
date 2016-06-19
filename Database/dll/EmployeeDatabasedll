@@ -1,0 +1,290 @@
+-- This CLP file was created using DB2LOOK Version "9.7" 
+-- Timestamp: 4/15/2013 8:51:00 AM
+-- Database Name: EMPLOYEE       
+-- Database Manager Version: DB2/NT Version 9.7.4          
+-- Database Codepage: 1252
+-- Database Collating Sequence is: UNIQUE
+
+
+CONNECT TO EMPLOYEE;
+
+
+
+-- Mimic tablespace
+
+ALTER TABLESPACE SYSCATSPACE
+      PREFETCHSIZE AUTOMATIC
+      OVERHEAD 7.500000
+      NO FILE SYSTEM CACHING 
+      AUTORESIZE YES 
+      TRANSFERRATE 0.060000;
+
+
+ALTER TABLESPACE TEMPSPACE1
+      PREFETCHSIZE AUTOMATIC
+      OVERHEAD 7.500000
+      FILE SYSTEM CACHING 
+      TRANSFERRATE 0.060000;
+
+
+ALTER TABLESPACE USERSPACE1
+      PREFETCHSIZE AUTOMATIC
+      OVERHEAD 7.500000
+      NO FILE SYSTEM CACHING 
+      AUTORESIZE YES 
+      TRANSFERRATE 0.060000;
+
+
+------------------------------------------------
+-- DDL Statements for table "TATHARI "."SALARY"
+------------------------------------------------
+ 
+
+CREATE TABLE "TATHARI "."SALARY"  (
+		  "SAL_ID" VARCHAR(12) NOT NULL , 
+		  "SAL_SALARY" REAL NOT NULL , 
+		  "SAL_EXPLIMIT" REAL WITH DEFAULT 1000 )   
+		 IN "USERSPACE1" ; 
+
+
+-- DDL Statements for primary key on Table "TATHARI "."SALARY"
+
+ALTER TABLE "TATHARI "."SALARY" 
+	ADD CONSTRAINT "CC1365425622703" PRIMARY KEY
+		("SAL_ID");
+
+
+
+------------------------------------------------
+-- DDL Statements for table "TATHARI "."VOUCHER"
+------------------------------------------------
+ 
+
+CREATE TABLE "TATHARI "."VOUCHER"  (
+		  "VOU_ID" VARCHAR(12) NOT NULL , 
+		  "VOU_TYPE" VARCHAR(20) NOT NULL , 
+		  "VOU_EXPENSE" REAL NOT NULL , 
+		  "VOU_NOTE" VARCHAR(200) , 
+		  "VOU_FLAG" INTEGER NOT NULL WITH DEFAULT 0 )   
+		 IN "USERSPACE1" ; 
+
+
+-- DDL Statements for primary key on Table "TATHARI "."VOUCHER"
+
+ALTER TABLE "TATHARI "."VOUCHER" 
+	ADD CONSTRAINT "CC1365588205890" PRIMARY KEY
+		("VOU_ID");
+
+
+
+------------------------------------------------
+-- DDL Statements for table "TATHARI "."QUERIES"
+------------------------------------------------
+ 
+
+CREATE TABLE "TATHARI "."QUERIES"  (
+		  "QUERY_NAME" VARCHAR(14) NOT NULL , 
+		  "QUERY_EMAIL" VARCHAR(30) , 
+		  "QUERY_PHONE" VARCHAR(30) , 
+		  "QUERY_QUE" VARCHAR(300) NOT NULL )   
+		 IN "USERSPACE1" ; 
+
+
+
+
+
+
+------------------------------------------------
+-- DDL Statements for table "TATHARI "."USERS"
+------------------------------------------------
+ 
+
+CREATE TABLE "TATHARI "."USERS"  (
+		  "USER_ID" VARCHAR(12) NOT NULL , 
+		  "USER_PSWRD" VARCHAR(8) NOT NULL , 
+		  "USER_DESGN" INTEGER NOT NULL WITH DEFAULT 0 )   
+		 IN "USERSPACE1" ; 
+
+
+-- DDL Statements for primary key on Table "TATHARI "."USERS"
+
+ALTER TABLE "TATHARI "."USERS" 
+	ADD CONSTRAINT "CC1365659966500" PRIMARY KEY
+		("USER_ID");
+
+
+
+------------------------------------------------
+-- DDL Statements for table "TATHARI "."REJECT"
+------------------------------------------------
+ 
+
+CREATE TABLE "TATHARI "."REJECT"  (
+		  "REJ_ID" VARCHAR(12) NOT NULL , 
+		  "REJ_REP" VARCHAR(300) )   
+		 IN "USERSPACE1" ; 
+
+
+-- DDL Statements for primary key on Table "TATHARI "."REJECT"
+
+ALTER TABLE "TATHARI "."REJECT" 
+	ADD CONSTRAINT "CC1365779538812" PRIMARY KEY
+		("REJ_ID");
+
+
+
+------------------------------------------------
+-- DDL Statements for table "TATHARI "."EMPLOYEE"
+------------------------------------------------
+ 
+
+CREATE TABLE "TATHARI "."EMPLOYEE"  (
+		  "EMP_ID" VARCHAR(12) NOT NULL , 
+		  "EMP_FIRSTNAME" VARCHAR(30) NOT NULL , 
+		  "EMP_LASTNAME" VARCHAR(30) NOT NULL , 
+		  "EMP_GENDER" VARCHAR(10) NOT NULL , 
+		  "EMP_DOB" VARCHAR(10) NOT NULL , 
+		  "EMP_MARITAL" VARCHAR(6) NOT NULL , 
+		  "EMP_BGROUP" VARCHAR(6) NOT NULL , 
+		  "EMP_PHONE" VARCHAR(16) NOT NULL , 
+		  "EMP_EMAIL" VARCHAR(30) NOT NULL , 
+		  "EMP_STREET" VARCHAR(30) NOT NULL , 
+		  "EMP_CITY" VARCHAR(30) NOT NULL , 
+		  "EMP_PINCODE" VARCHAR(15) NOT NULL , 
+		  "EMP_STATE" VARCHAR(30) NOT NULL , 
+		  "EMP_COUNTRY" VARCHAR(30) NOT NULL )   
+		 IN "USERSPACE1" ; 
+
+
+-- DDL Statements for primary key on Table "TATHARI "."EMPLOYEE"
+
+ALTER TABLE "TATHARI "."EMPLOYEE" 
+	ADD CONSTRAINT "CC1365831351630" PRIMARY KEY
+		("EMP_ID");
+
+
+
+------------------------------------------------
+-- DDL Statements for table "TATHARI "."DEPARTMENT"
+------------------------------------------------
+ 
+
+CREATE TABLE "TATHARI "."DEPARTMENT"  (
+		  "DPT_ID" VARCHAR(10) NOT NULL , 
+		  "DPT_EID" VARCHAR(12) NOT NULL , 
+		  "DPT_DESIGNATION" INTEGER NOT NULL , 
+		  "DPT_NAME" VARCHAR(20) NOT NULL )   
+		 IN "USERSPACE1" ; 
+
+
+-- DDL Statements for primary key on Table "TATHARI "."DEPARTMENT"
+
+ALTER TABLE "TATHARI "."DEPARTMENT" 
+	ADD CONSTRAINT "CC1365869011062" PRIMARY KEY
+		("DPT_EID");
+
+
+
+------------------------------------------------
+-- DDL Statements for table "TATHARI "."DRAFTS"
+------------------------------------------------
+ 
+
+CREATE TABLE "TATHARI "."DRAFTS"  (
+		  "DFT_ID" VARCHAR(12) NOT NULL , 
+		  "DFT_TYPE" VARCHAR(12) , 
+		  "DFT_EXPENSE" REAL , 
+		  "DFT_NOTE" VARCHAR(12) )   
+		 IN "USERSPACE1" ; 
+
+
+-- DDL Statements for primary key on Table "TATHARI "."DRAFTS"
+
+ALTER TABLE "TATHARI "."DRAFTS" 
+	ADD CONSTRAINT "CC1365932873875" PRIMARY KEY
+		("DFT_ID");
+
+
+
+-- DDL Statements for foreign keys on Table "TATHARI "."SALARY"
+
+ALTER TABLE "TATHARI "."SALARY" 
+	ADD CONSTRAINT "CC1365831525490" FOREIGN KEY
+		("SAL_ID")
+	REFERENCES "TATHARI "."EMPLOYEE"
+		("EMP_ID")
+	ON DELETE CASCADE
+	ON UPDATE NO ACTION
+	ENFORCED
+	ENABLE QUERY OPTIMIZATION;
+
+-- DDL Statements for foreign keys on Table "TATHARI "."VOUCHER"
+
+ALTER TABLE "TATHARI "."VOUCHER" 
+	ADD CONSTRAINT "CC1365831664349" FOREIGN KEY
+		("VOU_ID")
+	REFERENCES "TATHARI "."EMPLOYEE"
+		("EMP_ID")
+	ON DELETE CASCADE
+	ON UPDATE NO ACTION
+	ENFORCED
+	ENABLE QUERY OPTIMIZATION;
+
+-- DDL Statements for foreign keys on Table "TATHARI "."USERS"
+
+ALTER TABLE "TATHARI "."USERS" 
+	ADD CONSTRAINT "CC1365831571365" FOREIGN KEY
+		("USER_ID")
+	REFERENCES "TATHARI "."EMPLOYEE"
+		("EMP_ID")
+	ON DELETE CASCADE
+	ON UPDATE NO ACTION
+	ENFORCED
+	ENABLE QUERY OPTIMIZATION;
+
+-- DDL Statements for foreign keys on Table "TATHARI "."REJECT"
+
+ALTER TABLE "TATHARI "."REJECT" 
+	ADD CONSTRAINT "CC1365779545812" FOREIGN KEY
+		("REJ_ID")
+	REFERENCES "TATHARI "."VOUCHER"
+		("VOU_ID")
+	ON DELETE CASCADE
+	ON UPDATE NO ACTION
+	ENFORCED
+	ENABLE QUERY OPTIMIZATION;
+
+-- DDL Statements for foreign keys on Table "TATHARI "."DEPARTMENT"
+
+ALTER TABLE "TATHARI "."DEPARTMENT" 
+	ADD CONSTRAINT "CC1365869018531" FOREIGN KEY
+		("DPT_EID")
+	REFERENCES "TATHARI "."EMPLOYEE"
+		("EMP_ID")
+	ON DELETE CASCADE
+	ON UPDATE NO ACTION
+	ENFORCED
+	ENABLE QUERY OPTIMIZATION;
+
+
+
+
+
+
+
+COMMIT WORK;
+
+CONNECT RESET;
+
+TERMINATE;
+
+-- Specified SCHEMA is: TATHARI
+-- The db2look utility will consider only the specified tables 
+-- Creating DDL for table(s)
+
+-- Schema name is ignored for the Federated Section
+-- Binding package automatically ... 
+-- Bind is successful
+-- Binding package automatically ... 
+-- Bind is successful
+;

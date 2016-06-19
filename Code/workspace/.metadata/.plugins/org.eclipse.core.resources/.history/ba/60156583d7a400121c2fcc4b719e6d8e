@@ -1,0 +1,8 @@
+package com.tgmc;
+
+public class Drafts {
+String Did;
+String dtype;
+float dexp;
+String dnote;
+}

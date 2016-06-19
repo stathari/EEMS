@@ -1,0 +1,23 @@
+package com.dao;
+
+import java.sql.*;
+
+import com.tgmc.Login;
+public class Logindao {
+
+	public static boolean validate(Login b){
+		boolean status=false;
+		try{
+			Connection con=DriverManager.getConnection();
+			
+			PreparedStatement ps=con.prepareStatement("select * from Users where user_id=? , user_pswrd=? and user_desgn=?  ");
+			ps.setString(1,bean.getEmail());
+			ps.setString(2, bean.getPass());
+			
+			ResultSet rs=ps.executeQuery();
+			status=rs.next();
+			
+		}catch(Exception e){}
+		return status;
+	}
+}

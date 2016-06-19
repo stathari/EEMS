@@ -1,0 +1,59 @@
+<html>
+<head>
+</head>
+<body >
+
+
+<form name="voucher" action="" method="post">
+<fieldset>
+<legend> Employee Voucher</legend>
+Enter Employee Authorization Code:&nbsp;
+<input type="text" name="txtAuthCode" title="Enter Your Authorization Code"/>
+<div id="toCCsubject">
+<div class="label">Department:</div>
+<div class="input"><input type="text" size="70" name="txtTo" /></div>
+<div class="label">Designation:</div>
+<div class="input"><input type="text" size="70" name="txtCC" /></div>
+<div class="label">Subject:</div>
+<div class="input"><input type="text" size="70" name="txtSubject" /></div>
+
+<div class="label">Enter Money Spent(Rs):</div>
+<div class="input"><input type="text" size="35" name="txtTo" /></div>
+</div>
+<div id="ExpensesBook">
+<!--quick address book will go here--></td>
+</div>
+ExpensesBook:<br />
+<select size="4" name="selectList1" style="width:150px">
+<option value="1">education</option>
+<option value="2">Online shoping</option>
+<option value="3">services</option>
+
+<option value="4">Transport</option>
+
+<option value="5">Shelter</option>
+<option value="6">other Expenses </option>
+
+</select><br />
+<br /><input type="button" onClick="add(textTo,document.voucher.selectList1);"
+value="send to Supervisor" />
+<br />
+<br />
+
+<br />
+<br />
+
+
+View Feedback Report:<br />
+<textarea name="message" rows="6" cols="75"></textarea><br />
+
+
+</td>
+</fieldset>
+</form>
+<br />
+<br />
+
+
+</body>
+</html>

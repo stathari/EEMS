@@ -1,0 +1,7 @@
+package com.dao;
+
+public class Usersdao {
+	String insertUsers= "insert into Users values(?,?)";
+	String updateUsers = "update Users SET User_pswrd=?,where  User_ID=?";
+	String selectUsers = "select * from Users where User_ID=?";
+}

@@ -1,0 +1,10 @@
+INDEX VERSION 1.122+C:\Documents and Settings\KMIT\workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+493301121.index
+1716128122.index
+3766076148.index
+2318664205.index
+4223945826.index
+1129889997.index
+1550274323.index
+2296535499.index
+344081326.index

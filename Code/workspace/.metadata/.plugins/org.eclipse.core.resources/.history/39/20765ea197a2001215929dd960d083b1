@@ -1,0 +1,35 @@
+package com.tgmc;
+
+public class LoginSES extends HttpServlet {
+	  @Override
+	  public void doPost(HttpServletRequest request,
+	                     HttpServletResponse response)
+	  {
+	    String username = request.getParameter("username");
+	    String password = request.getParameter("password");
+	    // Get the session - if no session exists create one
+	    HttpSession session = request.getSession(true);
+	    // Set some attribute values to the session
+	    // In this case user and password from the request and client
+	    session.setAttribute("username", username);
+	    session.setAttribute("password", password);
+
+	    try {
+	      response.setContentType("text/html");
+	      PrintWriter writer = response.getWriter();
+	      writer.println("<html><body>");
+	      writer.println("Thank you, " + username +
+	                     ". You are now logged into the system");
+	      // Encodes the specified URL by including the session ID in it,
+	      // or, if encoding is not needed, returns the URL unchanged
+	      String newURL = response.encodeURL("/ServletSession/GetSession");
+	      // Return a <a> tag with the new url
+	       writer.println("Click <a href=\"" + newURL +
+	                     "\">here</a> for another servlet");
+	      writer.println("</body></html>");
+	      writer.close();
+	    } catch (Exception e) {
+	      e.printStackTrace();
+	    }
+	  }
+	}

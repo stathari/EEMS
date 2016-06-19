@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="TechMavericks">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="db2jcc.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/db2jcc/db2jcc">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="db2jcc_license_cu.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/db2jcc_license_cu/db2jcc_license_cu">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="TechMavericks"/>
+        <property name="java-output-path" value="/TechMavericks/build/classes"/>
+    </wb-module>
+</project-modules>

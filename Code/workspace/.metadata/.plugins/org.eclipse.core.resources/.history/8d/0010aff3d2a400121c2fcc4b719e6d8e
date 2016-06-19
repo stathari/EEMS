@@ -1,0 +1,70 @@
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1" import="com.dao.*,com.tgmc.*, com.util.*"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>mavericks-login</title>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+
+<body>
+<div id="main_container">
+	<div id="header">
+    	<div id="logo"><a href="home.html"><img src="images/logo.jpg" alt="" title="" border="0" /></a></div>
+        
+        <div id="menu">
+            <ul>                                        
+                <li><a href="home.html" title="">home</a></li>
+               <li><a href="services.html" title="">services</a></li>
+             <li><a  href="about.html" title="">About Us</a></li>
+                <li><a href="news.html" title="">News</a></li>
+				<li><a class="current" href="faq.html" title="">F.A.Q's</a></li>
+               <li><a href="contact.html" title="">contact us</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    
+    
+    
+    <div id="main_content">
+    	<div id="wide_content">
+       <center> <h3>Login NOT SUCCESSFULL</h3>
+<% out.println("<div style='font-size:30px; color:red'>"
+          +"Userid and password does not matched "+"</div>");
+%>        <table border="0"><tr><td><form action="emplogin.html">
+	<input type="submit" value="Redirect me to login page"/>
+	</form></td></tr>
+	<tr><td><form action="home.html"><input type="submit" value="Get me to Home page"/></form></td></tr></table>
+        
+		</center>
+
+        
+        </div><!--end of left content-->
+
+    </div><!--end of main content-->
+ 
+
+     <div id="footer">
+     	<div class="copyright">
+<a href="home.html"><img src="images/footer_logo.jpg" alt="" title="" border="0"></a>
+        </div>
+    	<div class="footer_links"> 
+        <a href="about.html">About us</a>
+                <a href="contact.html">Contact us </a>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Copyright All rights reserved... KMIT
+        
+
+        </div>
+    
+    
+    </div>  
+ 
+   
+
+</div> <!--end of main container-->
+
+</body>
+</html>

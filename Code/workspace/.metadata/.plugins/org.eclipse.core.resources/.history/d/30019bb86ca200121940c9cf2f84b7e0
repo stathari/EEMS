@@ -1,0 +1,71 @@
+package com.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import com.tgmc.Salary;
+import com.util.ConnectionPool;
+
+public class Usersdao {
+	String insertUsers= "insert into Users values(?,?)";
+	String updateUsers = "update Users SET User_pswrd=?,where  User_ID=?";
+	String selectUsers = "select * from Users where User_ID=?";
+	
+	Connection con=ConnectionPool.getConnection();
+	public boolean createSalary(Salary p)
+	{
+		try{
+		PreparedStatement ps = con.prepareStatement(insertSalary);
+		ps.setString(1, p.getId());
+		ps.setFloat(2, p.getSal());
+		ps.setFloat(3, p.getLimit());
+		
+		ps.executeUpdate();
+		}
+		catch(Exception e){
+			e.printStackTrace();
+			return false;
+		}
+		return false;
+	}
+	public boolean updateSalary(Salary p)
+	{
+		try{
+		PreparedStatement ps = con.prepareStatement(updateSalary);
+		ps.setString(1, p.getId());
+		ps.setString(2, p.getSal()+"");
+		ps.setString(3, p.getLimit()+"");
+		ps.executeUpdate();
+		return true;
+		}
+		catch(Exception e){
+			e.printStackTrace();
+			return false;
+		}
+	}
+	 public Salary selectSalary(String id){
+	    	
+	    	try{
+	    		PreparedStatement ps = con.prepareStatement(selectSalary);
+	    		ps.setString(1, id);
+	    		ResultSet rs =ps.executeQuery();
+	    		if(rs.next())
+	    		{
+	    			Salary p = new Salary();
+	    			p.setId(rs.getString(1));
+	    			p.setSal(rs.getFloat(2));
+	    			p.setLimit(rs.getFloat(3));
+	    			return p;
+	    		}
+	    		else
+	    			return null;
+	    		}catch(Exception e){
+	    			e.printStackTrace();
+	    			return null;
+	    		}
+	    	
+	    }
+	
+	
+}

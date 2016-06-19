@@ -1,0 +1,39 @@
+package prjct.man;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import prjct.tgmc.Employee;
+import prjct.util.ConnectionPool;
+
+public class Employeedao {
+	String insertEmployee= "insert into EMP values(?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+	
+	Connection con=ConnectionPool.getConnection();
+	public boolean createEmployee(Employee p)
+	{
+		try{
+		PreparedStatement ps = con.prepareStatement(insertEmployee);
+		ps.setString(1, p.getId());
+		ps.setString(2, p.getFname());
+		ps.setString(3, p.getLname());
+		ps.setString(4, p.getGen());
+		ps.setString(5, p.getDob());
+		ps.setString(6, p.getMarital());
+		ps.setString(7, p.getBgroup());
+		ps.setString(8, p.getPhone());
+		ps.setString(9, p.getHno());
+		ps.setString(10, p.getCity());
+		ps.setString(11, p.getPincode());
+		ps.setString(12, p.getDistrict());
+		ps.setString(13, p.getState());
+		ps.setString(14, p.getCountry());
+		ps.executeUpdate();
+		}
+		catch(Exception e){
+			e.printStackTrace();
+			return false;
+		}
+		return false;
+	}
+}

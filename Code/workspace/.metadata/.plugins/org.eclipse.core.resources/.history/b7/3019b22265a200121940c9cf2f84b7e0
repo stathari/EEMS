@@ -1,0 +1,11 @@
+package com.dao;
+
+public class Querydao {
+	String insertQuery= "insert into Queries values(?,?,?,?)";
+	String deleteQuery = "delete Queries where SAL_ID=? ";
+	String selectQuery = "select * from Queries where SAL_ID=?";
+	String selectAll = "select * from Queries";
+	
+	
+	
+}

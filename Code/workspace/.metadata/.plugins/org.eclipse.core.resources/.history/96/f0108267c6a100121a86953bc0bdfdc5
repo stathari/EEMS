@@ -1,0 +1,48 @@
+package com.tgmc;
+
+public class Voucher {
+	
+	String vid;
+	
+	String type;
+	float exp;
+	String text;
+	public String getText() {
+		return text;
+	}
+	public void setText(String text) {
+		this.text = text;
+	}
+	public String getVid() {
+		return vid;
+	}
+	public void setVid(String vid) {
+		this.vid = vid;
+	}
+	public float getExp() {
+		return exp;
+	}
+	public void setExp(float exp) {
+		this.exp = exp;
+	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	
+	
+	public Voucher(String vid, String type, float exp, String text) {
+		super();
+		this.vid = vid;
+		this.exp = exp;
+		this.type = type;
+		this.text = text;
+	}
+	public Voucher() {
+		super();
+	}
+	
+
+}

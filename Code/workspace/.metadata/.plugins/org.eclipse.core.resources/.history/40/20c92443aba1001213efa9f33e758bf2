@@ -1,0 +1,156 @@
+package com.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.tgmc.Vouchertl;
+import com.util.ConnectionPool;
+
+public class Vouchertldao {
+
+	String insertVoucher= "insert into Voucher_teamleader values(?,?,?,?,?)";
+	String updateVoucher= "update Voucher_teamleader SET VOU_EMPID=?, VOU_EXPTYPE=?, VOU_EXPENSE=?, VOU_NOTE_EMP=?, VOU_NOTE_MANAGER=? where EMP_ID=?";
+	String deleteVoucher= "delete Voucherwhere EMP_ID=? ";
+	String selectVoucher= "select * from Voucherwhere EMP_ID=?";
+	String selectAll= "select * from EMP";
+	Connection con=ConnectionPool.getConnection();
+	public boolean createEmployee(Voucherp)
+	{
+		try{
+		PreparedStatement ps = con.prepareStatement(insertEmployee);
+		ps.setString(1, p.getEid());
+		ps.setString(2, p.getFname());
+		ps.setString(3, p.getLname());
+		ps.setString(4, p.getGen());
+		ps.setString(5, p.getDob());
+		ps.setString(6, p.getMarital());
+		ps.setString(7, p.getBgrp());
+		ps.setString(9, p.getPhone());
+		ps.setString(8, p.getEmail());		
+		ps.setString(10, p.getStreet());
+		ps.setString(11, p.getCity());
+		ps.setString(12, p.getPincode());
+		ps.setString(13, p.getState());
+		ps.setString(14, p.getCountry());
+		ps.executeUpdate();
+		}
+		catch(Exception e){
+			e.printStackTrace();
+			return false;
+		}
+		return false;
+	}
+	public boolean updateEmployee(Voucherp)
+	{
+		try{
+		PreparedStatement ps = con.prepareStatement(updateEmployee);
+		ps.setString(1, p.getEid());
+		ps.setString(2, p.getFname());
+		ps.setString(3, p.getLname());
+		ps.setString(4, p.getGen());
+		ps.setString(5, p.getDob());
+		ps.setString(6, p.getMarital());
+		ps.setString(7, p.getBgrp());
+		ps.setString(8, p.getEmail());
+		ps.setString(9, p.getPhone());
+		ps.setString(10, p.getStreet());
+		ps.setString(11, p.getCity());
+		ps.setString(12, p.getPincode());
+		ps.setString(13, p.getState());
+		ps.setString(14, p.getCountry());
+		ps.executeUpdate();
+		return true;
+		}
+		catch(Exception e){
+			e.printStackTrace();
+			return false;
+		}
+	}
+	public boolean deleteEmployee(String id)
+	{
+		try{
+		PreparedStatement ps = con.prepareStatement(deleteEmployee);
+		ps.setString(1, id);
+		ps.executeUpdate();
+		return true;
+		}catch(Exception e){
+			e.printStackTrace();
+			return false;
+		}
+	}
+	 public VoucherselectEmployee(String id){
+	    	
+	    	try{
+	    		PreparedStatement ps = con.prepareStatement(selectEmployee);
+	    		ps.setString(1, id);
+	    		ResultSet rs =ps.executeQuery();
+	    		if(rs.next())
+	    		{
+	    			Voucherp = new Employee();
+	    			p.setEid(rs.getString(1));
+	    			p.setFname(rs.getString(2));
+	    			p.setLname(rs.getString(3));
+	    			p.setGen(rs.getString(4));
+	    			p.setDob(rs.getString(5));
+	    			p.setMarital(rs.getString(6));
+	    			p.setBgrp(rs.getString(7));
+	    			p.setEmail(rs.getString(8));
+		    		p.setPhone(rs.getString(9));
+	    			p.setStreet(rs.getString(10));
+	    			p.setCity(rs.getString(11));
+	    			p.setPincode(rs.getString(12));
+	    			p.setState(rs.getString(13));
+	    			p.setCountry(rs.getString(14));
+	    			return p;
+	    		}
+	    		else
+	    			return null;
+	    		}catch(Exception e){
+	    			e.printStackTrace();
+	    			return null;
+	    		}
+	    	
+	    }
+	
+	 public List<Employee> findAll(){
+	    	
+		    List<Employee> list = new ArrayList<Employee>();
+	    	try{
+	    		PreparedStatement ps = con.prepareStatement(selectAll);
+	    	  
+	    		ResultSet rs =ps.executeQuery();
+	    		while(rs.next())
+	    		{
+	    			Voucherp = new Employee();
+	    			p.setEid(rs.getString(1));
+	    			p.setFname(rs.getString(2));
+	    			p.setLname(rs.getString(3));
+	    			p.setGen(rs.getString(4));
+	    			p.setDob(rs.getString(5));
+	    			p.setMarital(rs.getString(6));
+	    			p.setBgrp(rs.getString(7));
+	    			p.setEmail(rs.getString(8));
+		    		p.setPhone(rs.getString(9));
+	    			p.setStreet(rs.getString(10));
+	    			p.setCity(rs.getString(11));
+	    			p.setPincode(rs.getString(12));
+	    			p.setState(rs.getString(13));
+	    			p.setCountry(rs.getString(14));
+	    			list.add(p);
+	    		}
+	    		return list;
+	    		}catch(Exception e){
+	    			e.printStackTrace();
+	    			return null;
+	    		}
+	    	
+	    }
+	 
+	
+	
+	
+	
+}

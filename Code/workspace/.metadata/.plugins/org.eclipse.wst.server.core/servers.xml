@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-time="30" hostname="localhost" id="IBM WASCE v3.0 2 at localhost" inPlaceSharedLib="false" karafShell="false" name="IBM WASCE v3.0 2 at localhost" runFromWorkspace="false" runtime-id="IBM WASCE v3.0 2" selectClasspathContainers="false" server-type="com.ibm.wasce.server.30" server-type-id="com.ibm.wasce.server.30" start-timeout="500" stop-timeout="30" timestamp="17">
+    <map ProgramArgs="--long" RMIRegistry="1099" WebConnector="8080" adminID="system" adminPassword="{Simple}rO0ABXNyABlqYXZheC5jcnlwdG8uU2VhbGVkT2JqZWN0PjY9psO3VHACAARbAA1lbmNvZGVkUGFyYW1zdAACW0JbABBlbmNyeXB0ZWRDb250ZW50cQB+AAFMAAlwYXJhbXNBbGd0ABJMamF2YS9sYW5nL1N0cmluZztMAAdzZWFsQWxncQB+AAJ4cHB1cgACW0Ks8xf4BghU4AIAAHhwAAAAEHnh03EmiNu4VTuWH+xZiRBwdAADQUVT" cleanOSGiBundleCache="false" key="geronimo_server_instance_properties" logLevel="--long" maxPings="40" pingDelay="10000" pingInterval="5000" publishTimeout="900000" refreshOSGiBundle="false"/>
+    <list key="modules" value0="Tgmcfinal::org.eclipse.jst.jee.server:Tgmcfinal::jst.web::3.0" value1="Tgmcfinalnw::org.eclipse.jst.jee.server:Tgmcfinalnw::jst.web::3.0"/>
+  </server>
+</servers>

@@ -1,0 +1,42 @@
+package com.tgmc;
+
+import java.io.PrintWriter;
+import java.util.Enumeration;
+
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+public class GetSession extends HttpServlet {
+	  @Override
+	  public void doGet(HttpServletRequest request, HttpServletResponse response) {
+	    // gets the session if it exists
+	    HttpSession session = request.getSession(false);
+	    try {
+	      response.setContentType("text/html");
+	      PrintWriter writer = response.getWriter();
+	      writer.println("<html><body>");
+	      // If you are not in a session - you are not logged in
+	      if (session == null) {
+	        writer.println("<p>You are not logged in</p>");
+	      } else {
+	        writer.println("Thank you, you are already logged in");
+	        writer.println("Here is the data in your session");
+	        Enumeration<String> names = session.getAttributeNames();
+	        while (names.hasMoreElements()) {
+	          String name = (String) names.nextElement();
+	          Object value = session.getAttribute(name);
+	          writer.println("<p>name=" + name + " value=" + value + "</p>");
+	        }
+	      }
+	      // Write html for a new login 
+	      writer.println("<p><a href=\"/ServletSession/login.html\">Return" +
+	                     "</a> to login page</p>");
+	      writer.println("</body></html>");
+	      writer.close();
+	    } catch (Exception e) {
+	      e.printStackTrace();
+	    }
+	  }
+	}

@@ -1,0 +1,202 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1" import="com.dao.*,com.tgmc.*, com.util.*"%>
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl" xml:lang="pl">
+<head>
+<title>Mavericks-admin</title>
+<link rel="stylesheet" type="text/css" href="scrstyles/adminpanel.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="scrstyles/adminpanelnav.css" media="screen" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".box .h_title").not(this).next("ul").hide("normal");
+	$(".box .h_title").not(this).next("#home").show("normal");
+	$(".box").children(".h_title").click( function() { $(this).next("ul").slideToggle(); });
+});
+
+
+function updateemp(){
+	document.form1.action='updateemp2.jsp';
+	document.form1.submit();
+	
+}
+function deleteemp(){
+	var r=confirm("Do you want to delete ?");
+	if (r==true)
+	  {
+		document.form1.action='deleteemp.jsp';
+		document.form1.submit();
+	  }
+	else
+	  {
+	  
+	  }
+}
+
+</script>
+</head>
+<body>
+<%
+	String UN=(String)session.getAttribute("USERNAME");
+	 String PW=(String)session.getAttribute("PASSWORD");
+
+	 Logindao login= new Logindao();
+	 int roleID = login.isValidUser(UN, PW);
+	 if(roleID == -1)
+	 {
+	 	out.println(" u can't view this page");
+
+	 }else
+	 {
+%>
+<div class="wrap">
+	<div id="header">
+	
+		
+				<p>Welcome to Mavericks, <strong>Employee:</strong> [ <a href="logout.jsp">logout</a> ]</p>
+	
+			<div id="header">
+    	<div id="logo"><a href="home.html"><img src="images/logo.jpg" alt="" title="" border="0" /></a></div>
+     
+        
+    </div>
+		
+		
+	</div>
+	
+	<div id="content">
+		<div id="sidebar">
+			
+			
+			<div class="box">
+				<div class="h_title">&#8250; Manage Profile</div>
+				<ul>
+				<li class="b1"><a class="icon page" href="viewprofile.jsp">View profile</a></li>
+				<li class="b2"><a class="icon category" href="updateprofile.jsp">Update Profile</a></li>
+				</ul>
+			</div>
+			<div class="box">
+				<div class="h_title">&#8250; Voucher</div>
+				<ul>
+						<li class="b1"><a class="icon users" href="vouchersubmit.jsp">Submit voucher</a></li>
+					<li class="b2"><a class="icon report" href="reports.jsp">View Status</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="main">
+				
+			
+			
+							
+			
+			<div class="full_w">
+				<div class="h_title">Welcome to Employee Panel</div>
+				<h1>Employee Expense Management System</h1>
+				<p></p>
+				
+				<h3>Update Employee personal profile</h3>
+
+
+ 
+	<% 
+ 	 
+ if(UN!=null){
+	Employeedao  dao = new Employeedao();
+	Employee p =dao.selectEmployee(UN);
+	 
+	 %>
+	 <form action="" method="post" name="form1">
+	 <table border='0' cellspacing='0' cellpadding='2'>
+	 
+	  <tr>
+	   <td>Employee ID :</td>
+	   <td><%=p.getEid()  %></td>
+	  </tr>
+	  <tr>
+	   <td>First Name :</td>
+	   <td><input type='text' name='firstname' value='<%=p.getFname()  %>'/></td>
+	  </tr>
+	  <tr>
+	   <td>Last Name : </td>
+	   <td><input type='text' name='lastname' value='<%=p.getLname()  %>'/></td>
+	  </tr>
+	  <tr>
+	   <td>Gender : </td>
+	   <td><input type='text' name='gender' value='<%=p.getGen()  %>'/></td>
+	  </tr>
+	  
+	  <tr>
+	   <td>Date of Birth : </td>
+	   <td><input type='text' name='dob' value='<%=p.getDob()  %>'/></td>
+	  </tr>
+	  
+	  <tr>
+	   <td>Marital Status : </td>
+	   <td><input type='text' name='marital' value='<%=p.getMarital()  %>'/></td>
+	  </tr>
+	  <tr>
+	   <td>Blood Group : </td>
+	   <td><input type='text' name='bgrp' value='<%=p.getBgrp()%>'/></td>
+	  </tr>
+	  <tr>
+	   <td>E - mail:</td>
+	   <td><input type='text' name='email' value='<%=p.getEmail()  %>'/></td>
+	  </tr>
+	  <tr>
+	   <td>Contact number: </td>
+	   <td><input type='text' name='phone' value='<%=p.getPhone()  %>'/></td>
+	  </tr>
+	  <tr>
+	   <td>Street: </td>
+	   <td><input type='text' name='street' value='<%=p.getStreet()  %>'/></td>
+	  </tr>
+	  <tr>
+	   <td>City:</td>
+	   <td><input type='text' name='city' value='<%=p.getCity()  %>'/></td>
+	  </tr>
+	  <tr>
+	   <td>Postal code : </td>
+	   <td><input type='text' name='postalcode' value='<%=p.getPincode()  %>'/></td>
+	  </tr>
+	  <tr>
+	   <td>State:</td>
+	   <td><input type='text' name='state' value='<%=p.getState()  %>'/></td>
+	  </tr>
+	  <tr>
+	   <td>Country: </td>
+	   <td><input type='text' name='country' value='<%=p.getCountry()  %>'/></td>
+	  </tr>
+	  <tr>
+	   <td> <input type='submit' value='update' onclick='updateemp()'/></td>
+	   <td><input type='submit' value='delete' onclick="deleteemp()"/></td>
+	  </tr>
+	 
+	 </table>
+	 </form>
+	 </div>
+	 <%
+ }}
+ %>	
+				
+               
+			</div>
+			
+		
+			
+			
+			
+		
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer">
+		<div class="left">
+			<p> <a href="home.html" target="_blank">Mavericks</a> | Admin Panel: <a href="#">Expense Management</a></p>
+		</div>
+		<a href="contact.html">Contact us </a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Copyright All rights reserved... KMIT
+	</div>
+</div>
+
+</body>
+</html>

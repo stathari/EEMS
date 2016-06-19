@@ -1,0 +1,125 @@
+<%@page import="prjct.man.Employeedao"%>
+<%@page import="prjct.tgmc.Employee"%>
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+function updateemp(){
+	document.form1.submit();
+	document.form1.action='Updateemp.jsp';
+	
+	
+}
+function deleteemp(){
+	var r=confirm("Do you want to delete ?");
+	if (r==true)
+	  {
+		document.form1.action='deleteemp.jsp';
+		document.form1.submit();
+	  }
+	else
+	  {
+	  
+	  }
+}
+
+</script>
+</head>
+<body>
+ <%
+ String EmployeeID= request.getParameter("emp");
+ 
+ %>
+<form action="updateemp.jsp" method="post" name="form1">
+ <table border='0' cellpadding='3'>
+  <caption><font style="text-align: center;color: red; size: 15px;">Search for a Employee to modify</font></caption>
+  <tr>
+  <td>EmployeeID: <input type='text' name='emp'/> </td>
+  <td><input type='submit' value='search'/></td>
+  </tr>
+ </table>
+  </form>
+  <%
+ 
+ // you want to search a student based on his id / name ?
+ // deploy this page and run..		 
+ if(EmployeeID!=null){
+	 Employeedao dao = new Employeedao();
+	 Employee p =dao.selectEmployee(EmployeeID);
+	 
+	 %>
+	 <form action="" method="post" name="form1">
+	 <table border='0' cellspacing='0' cellpadding='2'>
+	 
+	  <tr>
+	   <td>EmployeeId :</td>
+	   <td><%=p.getId()  %></td>
+	  </tr>
+	  <tr>
+	   <td>First Name:</td>
+	   <td><input type='text' name='firstname' value='<%=p.getFname()  %>'/></td>
+	  </tr>
+	  <tr>
+	   <td>Last Name: </td>
+	   <td><input type='text' name='lastname' value='<%=p.getLname()  %>'/></td>
+	  </tr>
+	  <tr>
+	   <td>Gender: </td>
+	   <td><input type='text' name='fathersname' value='<%=p.getGen()  %>'/></td>
+	  </tr>
+	  	  <tr>
+	   <td>Date of birth: </td>
+	   <td><input type='text' name='fathersname' value='<%=p.getDob()  %>'/></td>
+	  </tr>
+	  	  <tr>
+	   <td>Marital status: </td>
+	   <td><input type='text' name='fathersname' value='<%= p.getMarital() %>'/></td>
+	  </tr>
+	  <tr>
+	   <td>e-mail:</td>
+	   <td><input type='text' name='email' value='<%=p.getemail()  %>'/></td>
+	  </tr>
+	  <tr>
+	   <td>Phone number: </td>
+	   <td><input type='text' name='phone' value='<%=p.getPhone()  %>'/></td>
+	  </tr>
+	  
+	  <tr>
+	   <td>House / flat no: </td>
+	   <td><input type='text' name='street' value='<%=p.getHno()  %>'/></td>
+	  </tr>
+	  <tr>
+	   <td>City:</td>
+	   <td><input type='text' name='city' value='<%=p.getCity()  %>'/></td>
+	  </tr>
+	  <tr>
+	   <td>postal code: </td>
+	   <td><input type='text' name='postalcode' value='<%=p.getPincode()  %>'/></td>
+	  </tr>
+	  <tr>
+	   <td>state:</td>
+	   <td><input type='text' name='state' value='<%=p.getState()  %>'/></td>
+	  </tr>
+	  <tr>
+	   <td>country: </td>
+	   <td><input type='text' name='country' value='<%=p.getCountry()  %>'/></td>
+	  </tr>
+	  
+	  <tr>
+	   <td> <input type='submit' value='update' onclick='updateemp()'/></td>
+	   <td><input type='submit' value='delete' onclick="deleteemp()"/></td>
+	  </tr>
+	 
+	 </table>
+	 </form>
+	 <%
+ }
+ %>
+</body>
+</html>

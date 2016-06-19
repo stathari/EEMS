@@ -1,0 +1,1291 @@
+!SESSION 2013-04-14 10:09:54.359 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.7.0_17
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+This is a continuation of log file C:\Documents and Settings\KMIT\workspace\.metadata\.bak_0.log
+Created Time: 2013-04-14 13:29:46.812
+
+!ENTRY org.eclipse.wst.server.core 4 0 2013-04-14 13:29:46.812
+!MESSAGE Could not publish to the server.
+!STACK 0
+java.lang.NullPointerException
+	at org.apache.geronimo.st.v30.core.GeronimoServerBehaviourDelegate.publishModules(GeronimoServerBehaviourDelegate.java:392)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:955)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3108)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2013-04-14 14:33:09.312 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.7.0_17
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 14:33:52.640
+!MESSAGE Project facet osgi.app has not been defined. It is used in plugin com.ibm.wasce.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 14:33:52.718
+!MESSAGE Project facet osgi.bundle has not been defined. It is used in plugin com.ibm.wasce.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 14:33:52.718
+!MESSAGE Project facet osgi.fragment has not been defined. It is used in plugin com.ibm.wasce.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 14:33:52.718
+!MESSAGE Project facet osgi.comp has not been defined. It is used in plugin com.ibm.wasce.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 14:33:52.718
+!MESSAGE Project facet osgi.app has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 14:33:52.718
+!MESSAGE Project facet osgi.bundle has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 14:33:52.718
+!MESSAGE Project facet osgi.fragment has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 14:33:52.718
+!MESSAGE Project facet osgi.comp has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.jface 2 0 2013-04-14 15:08:53.468
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-04-14 15:08:53.468
+!MESSAGE A conflict occurred for CTRL+I:
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.indent,Correct Indentation,
+		Corrects the indentation of the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@5edc1c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.active.elements,Format Active Elements,
+		Format active elements,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@55871d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-04-14 15:08:53.468
+!MESSAGE A conflict occurred for CTRL+SHIFT+F:
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.format,Format,
+		Format the selected text,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1c4ca0c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.document,Format,
+		Format selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1eef609,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-04-14 15:08:53.468
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_UP:
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.enclosing,Select Enclosing Element,
+		Expand selection to include enclosing element,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@ad05d1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.enclosing,Select Enclosing Element,
+		Expand selection to include enclosing element,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1191c78,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-04-14 15:08:53.468
+!MESSAGE A conflict occurred for CTRL+SHIFT+P:
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.matching.bracket,Go to Matching Bracket,
+		Moves the cursor to the matching bracket,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@159130e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.goto.matching.bracket,Matching Character,
+		Go to Matching Character,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@121f06c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-04-14 15:08:53.468
+!MESSAGE A conflict occurred for CTRL+SHIFT+/:
+Binding(CTRL+SHIFT+/,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.add.block.comment,Add Block Comment,
+		Enclose the selection with a block comment,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@f1fee0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+/,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.add.block.comment,Add Block Comment,
+		Add Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@15df5e7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-04-14 15:08:53.468
+!MESSAGE A conflict occurred for CTRL+O:
+Binding(CTRL+O,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.show.outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@19431f2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+O,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.quick_outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@5b09ba,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-04-14 15:08:53.468
+!MESSAGE A conflict occurred for CTRL+SHIFT+ARROW_UP:
+Binding(CTRL+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.previous.member,Go to Previous Member,
+		Move the caret to the previous member of the compilation unit,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@dbb565,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.xml.ui.previousSibling,Previous Sibling,
+		Go to Previous Sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1e5a0e9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-04-14 15:08:53.468
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_DOWN:
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@6214ff,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@e18b1a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-04-14 15:08:53.468
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.toggle.comment,Toggle Comment,
+		Toggle comment the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@150946c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.toggle.comment,Toggle Comment,
+		Toggle Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@b1959,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-04-14 15:08:53.468
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_RIGHT:
+Binding(ALT+SHIFT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.next,Select Next Element,
+		Expand selection to include next sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1404027,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.next,Select Next Element,
+		Expand selection to include next sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@18126d0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-04-14 15:08:53.468
+!MESSAGE A conflict occurred for CTRL+SHIFT+\:
+Binding(CTRL+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.remove.block.comment,Remove Block Comment,
+		Remove the block comment enclosing the selection,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@133d078,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.remove.block.comment,Remove Block Comment,
+		Remove Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@8cde0e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-04-14 15:08:53.468
+!MESSAGE A conflict occurred for CTRL+SHIFT+ARROW_DOWN:
+Binding(CTRL+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.next.member,Go to Next Member,
+		Move the caret to the next member of the compilation unit,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@bb908b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.xml.ui.nextSibling,Next Sibling,
+		Go to Next Sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@15b9d49,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-04-14 15:08:53.468
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_LEFT:
+Binding(ALT+SHIFT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.previous,Select Previous Element,
+		Expand selection to include previous sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@e9d3b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.previous,Select Previous Element,
+		Expand selection to include previous sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@d9ed9f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2013-04-14 17:20:25.078
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for ResultSet [in ResultSet.class [in java.sql [in C:\Program Files\Java\jre7\lib\rt.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:639)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:463)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:619)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:565)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:557)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2013-04-14 17:20:25.109
+!MESSAGE Timed out while retrieving the attached javadoc for ResultSet [in ResultSet.class [in java.sql [in C:\Program Files\Java\jre7\lib\rt.jar]]] 
+!SESSION 2013-04-14 19:59:16.296 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.7.0_17
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 19:59:47.218
+!MESSAGE Project facet osgi.app has not been defined. It is used in plugin com.ibm.wasce.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 19:59:47.250
+!MESSAGE Project facet osgi.bundle has not been defined. It is used in plugin com.ibm.wasce.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 19:59:47.250
+!MESSAGE Project facet osgi.fragment has not been defined. It is used in plugin com.ibm.wasce.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 19:59:47.250
+!MESSAGE Project facet osgi.comp has not been defined. It is used in plugin com.ibm.wasce.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 19:59:47.250
+!MESSAGE Project facet osgi.app has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 19:59:47.250
+!MESSAGE Project facet osgi.bundle has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 19:59:47.250
+!MESSAGE Project facet osgi.fragment has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 19:59:47.250
+!MESSAGE Project facet osgi.comp has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.jface 2 0 2013-04-14 20:02:37.375
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-04-14 20:02:37.375
+!MESSAGE A conflict occurred for CTRL+I:
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.indent,Correct Indentation,
+		Corrects the indentation of the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1c1a054,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.active.elements,Format Active Elements,
+		Format active elements,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@4da31b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-04-14 20:02:37.375
+!MESSAGE A conflict occurred for CTRL+SHIFT+F:
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.format,Format,
+		Format the selected text,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@104f1da,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.document,Format,
+		Format selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@14364f2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-04-14 20:02:37.375
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_UP:
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.enclosing,Select Enclosing Element,
+		Expand selection to include enclosing element,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1a2312c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.enclosing,Select Enclosing Element,
+		Expand selection to include enclosing element,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@aa32ff,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-04-14 20:02:37.375
+!MESSAGE A conflict occurred for CTRL+SHIFT+P:
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.matching.bracket,Go to Matching Bracket,
+		Moves the cursor to the matching bracket,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@14a4cd9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.goto.matching.bracket,Matching Character,
+		Go to Matching Character,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@111025e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-04-14 20:02:37.375
+!MESSAGE A conflict occurred for CTRL+SHIFT+/:
+Binding(CTRL+SHIFT+/,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.add.block.comment,Add Block Comment,
+		Enclose the selection with a block comment,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@fb6f89,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+/,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.add.block.comment,Add Block Comment,
+		Add Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@17c9e00,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-04-14 20:02:37.375
+!MESSAGE A conflict occurred for CTRL+O:
+Binding(CTRL+O,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.show.outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@157abac,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+O,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.quick_outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@c7e149,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-04-14 20:02:37.375
+!MESSAGE A conflict occurred for CTRL+SHIFT+ARROW_UP:
+Binding(CTRL+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.previous.member,Go to Previous Member,
+		Move the caret to the previous member of the compilation unit,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@978b4e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.xml.ui.previousSibling,Previous Sibling,
+		Go to Previous Sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@8fecc5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-04-14 20:02:37.375
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_DOWN:
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@13abc8c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@13df9d8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-04-14 20:02:37.375
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.toggle.comment,Toggle Comment,
+		Toggle comment the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1309c5f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.toggle.comment,Toggle Comment,
+		Toggle Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@15643ca,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-04-14 20:02:37.375
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_RIGHT:
+Binding(ALT+SHIFT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.next,Select Next Element,
+		Expand selection to include next sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@6a2cdd,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.next,Select Next Element,
+		Expand selection to include next sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1e47e1d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-04-14 20:02:37.375
+!MESSAGE A conflict occurred for CTRL+SHIFT+\:
+Binding(CTRL+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.remove.block.comment,Remove Block Comment,
+		Remove the block comment enclosing the selection,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@a79eee,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.remove.block.comment,Remove Block Comment,
+		Remove Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@11d1223,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-04-14 20:02:37.375
+!MESSAGE A conflict occurred for CTRL+SHIFT+ARROW_DOWN:
+Binding(CTRL+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.next.member,Go to Next Member,
+		Move the caret to the next member of the compilation unit,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@b31c9e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.xml.ui.nextSibling,Next Sibling,
+		Go to Next Sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@afe257,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-04-14 20:02:37.375
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_LEFT:
+Binding(ALT+SHIFT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.previous,Select Previous Element,
+		Expand selection to include previous sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@11bef62,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.previous,Select Previous Element,
+		Expand selection to include previous sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@19bdc58,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SESSION 2013-04-14 21:03:30.671 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.7.0_17
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 21:04:01.453
+!MESSAGE Project facet osgi.app has not been defined. It is used in plugin com.ibm.wasce.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 21:04:01.484
+!MESSAGE Project facet osgi.bundle has not been defined. It is used in plugin com.ibm.wasce.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 21:04:01.484
+!MESSAGE Project facet osgi.fragment has not been defined. It is used in plugin com.ibm.wasce.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 21:04:01.484
+!MESSAGE Project facet osgi.comp has not been defined. It is used in plugin com.ibm.wasce.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 21:04:01.484
+!MESSAGE Project facet osgi.app has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 21:04:01.484
+!MESSAGE Project facet osgi.bundle has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 21:04:01.484
+!MESSAGE Project facet osgi.fragment has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 21:04:01.484
+!MESSAGE Project facet osgi.comp has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+!SESSION 2013-04-14 22:30:45.531 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.7.0_17
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 22:31:37.281
+!MESSAGE Project facet osgi.app has not been defined. It is used in plugin com.ibm.wasce.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 22:31:37.421
+!MESSAGE Project facet osgi.bundle has not been defined. It is used in plugin com.ibm.wasce.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 22:31:37.421
+!MESSAGE Project facet osgi.fragment has not been defined. It is used in plugin com.ibm.wasce.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 22:31:37.421
+!MESSAGE Project facet osgi.comp has not been defined. It is used in plugin com.ibm.wasce.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 22:31:37.421
+!MESSAGE Project facet osgi.app has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 22:31:37.421
+!MESSAGE Project facet osgi.bundle has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 22:31:37.421
+!MESSAGE Project facet osgi.fragment has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 22:31:37.421
+!MESSAGE Project facet osgi.comp has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE start of default/Tgmcfinal/1.0/car failed
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE org.apache.geronimo.kernel.config.LifecycleException: start of default/Tgmcfinal/1.0/car failed
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.kernel.config.SimpleConfigurationManager.startConfiguration(SimpleConfigurationManager.java:726)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.kernel.config.SimpleConfigurationManager.startConfiguration(SimpleConfigurationManager.java:689)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at java.lang.reflect.Method.invoke(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.gbean.runtime.ReflectionMethodInvoker.invoke(ReflectionMethodInvoker.java:34)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.gbean.runtime.GBeanOperation.invoke(GBeanOperation.java:131)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.gbean.runtime.GBeanInstance.invoke(GBeanInstance.java:883)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.kernel.basic.BasicKernel.invoke(BasicKernel.java:245)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.kernel.KernelGBean.invoke(KernelGBean.java:344)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at java.lang.reflect.Method.invoke(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.gbean.runtime.ReflectionMethodInvoker.invoke(ReflectionMethodInvoker.java:34)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.gbean.runtime.GBeanOperation.invoke(GBeanOperation.java:131)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.gbean.runtime.GBeanInstance.invoke(GBeanInstance.java:883)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.kernel.basic.BasicKernel.invoke(BasicKernel.java:245)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.system.jmx.MBeanGBeanBridge.invoke(MBeanGBeanBridge.java:172)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at com.sun.jmx.remote.security.MBeanServerAccessController.invoke(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at javax.management.remote.rmi.RMIConnectionImpl.access$300(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at java.security.AccessController.doPrivileged(Native Method)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at javax.management.remote.rmi.RMIConnectionImpl.invoke(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at sun.reflect.GeneratedMethodAccessor70.invoke(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at java.lang.reflect.Method.invoke(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at sun.rmi.server.UnicastServerRef.dispatch(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at sun.rmi.transport.Transport$1.run(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at sun.rmi.transport.Transport$1.run(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at java.security.AccessController.doPrivileged(Native Method)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at sun.rmi.transport.Transport.serviceCall(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at sun.rmi.transport.tcp.TCPTransport.handleMessages(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE Caused by: org.apache.geronimo.kernel.config.InvalidConfigException: Unknown start exception
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.kernel.config.ConfigurationUtil.startConfigurationGBeans(ConfigurationUtil.java:527)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.kernel.config.KernelConfigurationManager.start(KernelConfigurationManager.java:225)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.kernel.config.SimpleConfigurationManager.startConfiguration(SimpleConfigurationManager.java:710)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	... 42 more
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE Caused by: org.apache.geronimo.gbean.InvalidConfigurationException: Configuration org.apache.geronimo.configs/j2ee-corba-yoko/3.0-w20120730/car failed to start due to the following reasons:
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE   The service ServiceModule=org.apache.geronimo.configs/j2ee-corba-yoko/3.0-w20120730/car,j2eeType=CORBANameService,name=NameServer did not start because Error starting transient name service on port 1050
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE org.apache.geronimo.corba.security.config.ConfigException: Error starting transient name service on port 1050
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.yoko.ORBConfigAdapter.createNameService(ORBConfigAdapter.java:191)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.corba.NameService.doStart(NameService.java:164)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.gbean.runtime.GBeanInstance.createInstance(GBeanInstance.java:1000)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.gbean.runtime.GBeanInstanceState.attemptFullStart(GBeanInstanceState.java:271)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.gbean.runtime.GBeanInstanceState.start(GBeanInstanceState.java:105)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.gbean.runtime.GBeanInstanceState.startRecursive(GBeanInstanceState.java:127)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.gbean.runtime.GBeanInstance.startRecursive(GBeanInstance.java:569)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.kernel.basic.BasicKernel.startRecursiveGBean(BasicKernel.java:386)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.kernel.config.ConfigurationUtil.startConfigurationGBeans(ConfigurationUtil.java:466)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.kernel.config.KernelConfigurationManager.start(KernelConfigurationManager.java:225)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.kernel.config.SimpleConfigurationManager.startConfiguration(SimpleConfigurationManager.java:710)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.kernel.config.SimpleConfigurationManager.startConfiguration(SimpleConfigurationManager.java:689)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at java.lang.reflect.Method.invoke(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.gbean.runtime.ReflectionMethodInvoker.invoke(ReflectionMethodInvoker.java:34)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.gbean.runtime.GBeanOperation.invoke(GBeanOperation.java:131)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.gbean.runtime.GBeanInstance.invoke(GBeanInstance.java:883)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.kernel.basic.BasicKernel.invoke(BasicKernel.java:245)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.kernel.KernelGBean.invoke(KernelGBean.java:344)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at java.lang.reflect.Method.invoke(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.gbean.runtime.ReflectionMethodInvoker.invoke(ReflectionMethodInvoker.java:34)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.gbean.runtime.GBeanOperation.invoke(GBeanOperation.java:131)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.gbean.runtime.GBeanInstance.invoke(GBeanInstance.java:883)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.kernel.basic.BasicKernel.invoke(BasicKernel.java:245)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.system.jmx.MBeanGBeanBridge.invoke(MBeanGBeanBridge.java:172)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at com.sun.jmx.remote.security.MBeanServerAccessController.invoke(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at javax.management.remote.rmi.RMIConnectionImpl.access$300(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at java.security.AccessController.doPrivileged(Native Method)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at javax.management.remote.rmi.RMIConnectionImpl.invoke(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at sun.reflect.GeneratedMethodAccessor70.invoke(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at java.lang.reflect.Method.invoke(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at sun.rmi.server.UnicastServerRef.dispatch(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at sun.rmi.transport.Transport$1.run(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at sun.rmi.transport.Transport$1.run(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at java.security.AccessController.doPrivileged(Native Method)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at sun.rmi.transport.Transport.serviceCall(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at sun.rmi.transport.tcp.TCPTransport.handleMessages(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE Caused by: org.apache.yoko.orb.CosNaming.tnaming.TransientServiceException: Unable to initialize name service
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.yoko.orb.CosNaming.tnaming.TransientNameService.initialize(TransientNameService.java:156)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.yoko.ORBConfigAdapter$1.run(ORBConfigAdapter.java:183)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.yoko.ORBConfigAdapter.createNameService(ORBConfigAdapter.java:186)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	... 52 more
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE Caused by: org.omg.CORBA.COMM_FAILURE: bind() failed: Address already in use: JVM_Bind:  vmcid: Apache minor code: 0x8  completed: No
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.yoko.orb.OCI.IIOP.Acceptor_impl.<init>(Acceptor_impl.java:542)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.yoko.orb.OCI.IIOP.AccFactory_impl.create_acceptor(AccFactory_impl.java:163)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.yoko.orb.OBPortableServer.POAManagerFactory_impl.create_POAManager(POAManagerFactory_impl.java:252)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.yoko.orb.OB.ORBControl.initializeRootPOA(ORBControl.java:539)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.yoko.orb.OBCORBA.ORB_impl.resolve_initial_references(ORB_impl.java:1094)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.yoko.orb.CosNaming.tnaming.TransientNameService.initialize(TransientNameService.java:130)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	... 54 more
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE Caused by: java.net.BindException: Address already in use: JVM_Bind
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at java.net.TwoStacksPlainSocketImpl.socketBind(Native Method)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at java.net.AbstractPlainSocketImpl.bind(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at java.net.TwoStacksPlainSocketImpl.bind(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at java.net.PlainSocketImpl.bind(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at java.net.ServerSocket.bind(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at java.net.ServerSocket.<init>(Unknown Source)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.yoko.orb.OCI.IIOP.DefaultConnectionHelper.createServerSocket(DefaultConnectionHelper.java:55)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.yoko.orb.OCI.IIOP.Acceptor_impl.<init>(Acceptor_impl.java:532)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	... 59 more
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE   The service ServiceModule=org.apache.geronimo.configs/j2ee-corba-yoko/3.0-w20120730/car,j2eeType=CORBABean,name=Server did not start because org.apache.geronimo.configs/j2ee-corba-yoko/3.0-w20120730/car?ServiceModule=org.apache.geronimo.configs/j2ee-corba-yoko/3.0-w20120730/car,j2eeType=CORBANameService,name=NameServer did not start.
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE   The service ServiceModule=org.apache.geronimo.configs/j2ee-corba-yoko/3.0-w20120730/car,j2eeType=CORBABean,name=UnprotectedServer did not start because org.apache.geronimo.configs/j2ee-corba-yoko/3.0-w20120730/car?ServiceModule=org.apache.geronimo.configs/j2ee-corba-yoko/3.0-w20120730/car,j2eeType=CORBANameService,name=NameServer did not start.
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	at org.apache.geronimo.kernel.config.ConfigurationUtil.startConfigurationGBeans(ConfigurationUtil.java:493)
+!SUBENTRY 1 org.apache.geronimo.st.v30.core 4 0 2013-04-14 23:32:11.703
+!MESSAGE 	... 44 more
+!SESSION 2013-04-14 23:35:34.625 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.7.0_17
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 23:36:15.640
+!MESSAGE Project facet osgi.app has not been defined. It is used in plugin com.ibm.wasce.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 23:36:15.921
+!MESSAGE Project facet osgi.bundle has not been defined. It is used in plugin com.ibm.wasce.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 23:36:15.921
+!MESSAGE Project facet osgi.fragment has not been defined. It is used in plugin com.ibm.wasce.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 23:36:15.921
+!MESSAGE Project facet osgi.comp has not been defined. It is used in plugin com.ibm.wasce.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 23:36:15.921
+!MESSAGE Project facet osgi.app has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 23:36:15.921
+!MESSAGE Project facet osgi.bundle has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 23:36:15.921
+!MESSAGE Project facet osgi.fragment has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-14 23:36:15.921
+!MESSAGE Project facet osgi.comp has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+!SESSION 2013-04-15 05:24:29.781 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.7.0_17
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-15 05:25:14.765
+!MESSAGE Project facet osgi.app has not been defined. It is used in plugin com.ibm.wasce.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-15 05:25:14.859
+!MESSAGE Project facet osgi.bundle has not been defined. It is used in plugin com.ibm.wasce.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-15 05:25:14.859
+!MESSAGE Project facet osgi.fragment has not been defined. It is used in plugin com.ibm.wasce.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-15 05:25:14.859
+!MESSAGE Project facet osgi.comp has not been defined. It is used in plugin com.ibm.wasce.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-15 05:25:14.859
+!MESSAGE Project facet osgi.app has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-15 05:25:14.859
+!MESSAGE Project facet osgi.bundle has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-15 05:25:14.859
+!MESSAGE Project facet osgi.fragment has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-15 05:25:14.859
+!MESSAGE Project facet osgi.comp has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+!SESSION 2013-04-15 06:47:37.375 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.7.0_17
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-15 06:48:29.109
+!MESSAGE Project facet osgi.app has not been defined. It is used in plugin com.ibm.wasce.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-15 06:48:29.156
+!MESSAGE Project facet osgi.bundle has not been defined. It is used in plugin com.ibm.wasce.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-15 06:48:29.156
+!MESSAGE Project facet osgi.fragment has not been defined. It is used in plugin com.ibm.wasce.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-15 06:48:29.156
+!MESSAGE Project facet osgi.comp has not been defined. It is used in plugin com.ibm.wasce.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-15 06:48:29.156
+!MESSAGE Project facet osgi.app has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-15 06:48:29.156
+!MESSAGE Project facet osgi.bundle has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-15 06:48:29.156
+!MESSAGE Project facet osgi.fragment has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-15 06:48:29.156
+!MESSAGE Project facet osgi.comp has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+!SESSION 2013-04-15 08:34:14.859 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.7.0_17
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-15 08:35:07.109
+!MESSAGE Project facet osgi.app has not been defined. It is used in plugin com.ibm.wasce.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-15 08:35:07.187
+!MESSAGE Project facet osgi.bundle has not been defined. It is used in plugin com.ibm.wasce.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-15 08:35:07.187
+!MESSAGE Project facet osgi.fragment has not been defined. It is used in plugin com.ibm.wasce.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-15 08:35:07.187
+!MESSAGE Project facet osgi.comp has not been defined. It is used in plugin com.ibm.wasce.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-15 08:35:07.187
+!MESSAGE Project facet osgi.app has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-15 08:35:07.187
+!MESSAGE Project facet osgi.bundle has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-15 08:35:07.187
+!MESSAGE Project facet osgi.fragment has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-15 08:35:07.187
+!MESSAGE Project facet osgi.comp has not been defined. It is used in plugin org.apache.geronimo.st.v30.core.
+
+!ENTRY org.eclipse.equinox.registry 4 1 2013-04-15 08:39:48.296
+!MESSAGE Plug-in com.ibm.wasce.st.v30.core was unable to load class com.ibm.wasce.st.core.operations.ImportDeploymentPlanOperation.
+!STACK 0
+java.lang.ClassNotFoundException: com.ibm.wasce.st.core.operations.ImportDeploymentPlanOperation
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:501)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.wst.common.frameworks.internal.operations.OperationExtension.getPostOperation(OperationExtension.java:58)
+	at org.eclipse.wst.common.frameworks.internal.operations.ComposedExtendedOperationHolder.createExtendedOperationHolder(ComposedExtendedOperationHolder.java:52)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl$OperationStackEntry.initExtendedOps(DataModelPausibleOperationImpl.java:556)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl$OperationStackEntry.getNextPreOperation(DataModelPausibleOperationImpl.java:474)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.doExecute(DataModelPausibleOperationImpl.java:233)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.executeImpl(DataModelPausibleOperationImpl.java:219)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.cacheThreadAndContinue(DataModelPausibleOperationImpl.java:89)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.execute(DataModelPausibleOperationImpl.java:207)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.ui.DataModelWizard$1CatchThrowableRunnableWithProgress.run(DataModelWizard.java:220)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.wst.common.frameworks 4 0 2013-04-15 08:39:52.625
+!MESSAGE Error importing Module File
+!STACK 0
+org.eclipse.core.commands.ExecutionException: Error importing Module File
+	at org.eclipse.jst.j2ee.internal.archive.operations.J2EEArtifactImportOperation.doExecute(J2EEArtifactImportOperation.java:89)
+	at org.eclipse.jst.j2ee.internal.archive.operations.J2EEArtifactImportOperation.execute(J2EEArtifactImportOperation.java:57)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl$1.run(DataModelPausibleOperationImpl.java:385)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.runOperation(DataModelPausibleOperationImpl.java:410)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.runOperation(DataModelPausibleOperationImpl.java:360)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.doExecute(DataModelPausibleOperationImpl.java:247)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.executeImpl(DataModelPausibleOperationImpl.java:219)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.cacheThreadAndContinue(DataModelPausibleOperationImpl.java:89)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.execute(DataModelPausibleOperationImpl.java:207)
+	at org.eclipse.jst.j2ee.internal.web.archive.operations.WebComponentImportOperation.importWebLibraryProjects(WebComponentImportOperation.java:106)
+	at org.eclipse.jst.j2ee.internal.web.archive.operations.WebComponentImportOperation.doExecute(WebComponentImportOperation.java:82)
+	at org.eclipse.jst.j2ee.internal.archive.operations.J2EEArtifactImportOperation.execute(J2EEArtifactImportOperation.java:57)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl$1.run(DataModelPausibleOperationImpl.java:385)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.runOperation(DataModelPausibleOperationImpl.java:410)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.runOperation(DataModelPausibleOperationImpl.java:360)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.doExecute(DataModelPausibleOperationImpl.java:247)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.executeImpl(DataModelPausibleOperationImpl.java:219)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.cacheThreadAndContinue(DataModelPausibleOperationImpl.java:89)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.execute(DataModelPausibleOperationImpl.java:207)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.ui.DataModelWizard$1CatchThrowableRunnableWithProgress.run(DataModelWizard.java:220)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Caused by: org.eclipse.wst.common.frameworks.internal.enablement.nonui.WFTWrappedException: Error importing Module File
+	at org.eclipse.jst.j2ee.internal.archive.operations.J2EEArtifactImportOperation.importModuleFile(J2EEArtifactImportOperation.java:127)
+	at org.eclipse.jst.j2ee.internal.archive.operations.J2EEArtifactImportOperation.doExecute(J2EEArtifactImportOperation.java:87)
+	... 22 more
+Caused by: org.eclipse.jst.jee.archive.ArchiveSaveFailureException: java.lang.IllegalArgumentException: Path must include project and resource name: /ImportedClasses
+	at org.eclipse.jst.jee.archive.AbstractArchiveSaveAdapter.save(AbstractArchiveSaveAdapter.java:89)
+	at org.eclipse.jst.j2ee.internal.archive.ComponentArchiveSaveAdapter.save(ComponentArchiveSaveAdapter.java:117)
+	at org.eclipse.jst.j2ee.internal.archive.J2EEComponentArchiveSaveAdapter.save(J2EEComponentArchiveSaveAdapter.java:55)
+	at org.eclipse.jst.jee.archive.internal.ArchiveFactoryImpl.save(ArchiveFactoryImpl.java:115)
+	at org.eclipse.jst.jee.archive.internal.ArchiveFactoryImpl.saveArchive(ArchiveFactoryImpl.java:134)
+	at org.eclipse.jst.j2ee.internal.archive.operations.J2EEArtifactImportOperation.importModuleFile(J2EEArtifactImportOperation.java:123)
+	... 23 more
+Caused by: java.lang.IllegalArgumentException: Path must include project and resource name: /ImportedClasses
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:63)
+	at org.eclipse.core.internal.resources.Workspace.newResource(Workspace.java:2163)
+	at org.eclipse.core.internal.resources.Container.getFolder(Container.java:222)
+	at org.eclipse.jst.j2ee.internal.archive.J2EEComponentArchiveSaveAdapter.createImportedClassesFolder(J2EEComponentArchiveSaveAdapter.java:103)
+	at org.eclipse.jst.j2ee.internal.archive.J2EEComponentArchiveSaveAdapter.shouldSave(J2EEComponentArchiveSaveAdapter.java:80)
+	at org.eclipse.jst.jee.archive.AbstractArchiveSaveAdapter.save(AbstractArchiveSaveAdapter.java:71)
+	... 28 more
+
+!ENTRY org.eclipse.wst.common.frameworks 4 0 2013-04-15 08:39:52.796
+!MESSAGE Error importing Module File
+!STACK 0
+org.eclipse.core.commands.ExecutionException: Error importing Module File
+	at org.eclipse.jst.j2ee.internal.archive.operations.J2EEArtifactImportOperation.doExecute(J2EEArtifactImportOperation.java:89)
+	at org.eclipse.jst.j2ee.internal.archive.operations.J2EEArtifactImportOperation.execute(J2EEArtifactImportOperation.java:57)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl$1.run(DataModelPausibleOperationImpl.java:385)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.runOperation(DataModelPausibleOperationImpl.java:410)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.runOperation(DataModelPausibleOperationImpl.java:360)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.doExecute(DataModelPausibleOperationImpl.java:247)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.executeImpl(DataModelPausibleOperationImpl.java:219)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.cacheThreadAndContinue(DataModelPausibleOperationImpl.java:89)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.execute(DataModelPausibleOperationImpl.java:207)
+	at org.eclipse.jst.j2ee.internal.web.archive.operations.WebComponentImportOperation.importWebLibraryProjects(WebComponentImportOperation.java:106)
+	at org.eclipse.jst.j2ee.internal.web.archive.operations.WebComponentImportOperation.doExecute(WebComponentImportOperation.java:82)
+	at org.eclipse.jst.j2ee.internal.archive.operations.J2EEArtifactImportOperation.execute(J2EEArtifactImportOperation.java:57)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl$1.run(DataModelPausibleOperationImpl.java:385)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.runOperation(DataModelPausibleOperationImpl.java:410)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.runOperation(DataModelPausibleOperationImpl.java:360)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.doExecute(DataModelPausibleOperationImpl.java:247)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.executeImpl(DataModelPausibleOperationImpl.java:219)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.cacheThreadAndContinue(DataModelPausibleOperationImpl.java:89)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.execute(DataModelPausibleOperationImpl.java:207)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.ui.DataModelWizard$1CatchThrowableRunnableWithProgress.run(DataModelWizard.java:220)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Caused by: org.eclipse.wst.common.frameworks.internal.enablement.nonui.WFTWrappedException: Error importing Module File
+	at org.eclipse.jst.j2ee.internal.archive.operations.J2EEArtifactImportOperation.importModuleFile(J2EEArtifactImportOperation.java:127)
+	at org.eclipse.jst.j2ee.internal.archive.operations.J2EEArtifactImportOperation.doExecute(J2EEArtifactImportOperation.java:87)
+	... 22 more
+Caused by: org.eclipse.jst.jee.archive.ArchiveSaveFailureException: java.lang.IllegalArgumentException: Path must include project and resource name: /ImportedClasses
+	at org.eclipse.jst.jee.archive.AbstractArchiveSaveAdapter.save(AbstractArchiveSaveAdapter.java:89)
+	at org.eclipse.jst.j2ee.internal.archive.ComponentArchiveSaveAdapter.save(ComponentArchiveSaveAdapter.java:117)
+	at org.eclipse.jst.j2ee.internal.archive.J2EEComponentArchiveSaveAdapter.save(J2EEComponentArchiveSaveAdapter.java:55)
+	at org.eclipse.jst.jee.archive.internal.ArchiveFactoryImpl.save(ArchiveFactoryImpl.java:115)
+	at org.eclipse.jst.jee.archive.internal.ArchiveFactoryImpl.saveArchive(ArchiveFactoryImpl.java:134)
+	at org.eclipse.jst.j2ee.internal.archive.operations.J2EEArtifactImportOperation.importModuleFile(J2EEArtifactImportOperation.java:123)
+	... 23 more
+Caused by: java.lang.IllegalArgumentException: Path must include project and resource name: /ImportedClasses
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:63)
+	at org.eclipse.core.internal.resources.Workspace.newResource(Workspace.java:2163)
+	at org.eclipse.core.internal.resources.Container.getFolder(Container.java:222)
+	at org.eclipse.jst.j2ee.internal.archive.J2EEComponentArchiveSaveAdapter.createImportedClassesFolder(J2EEComponentArchiveSaveAdapter.java:103)
+	at org.eclipse.jst.j2ee.internal.archive.J2EEComponentArchiveSaveAdapter.shouldSave(J2EEComponentArchiveSaveAdapter.java:80)
+	at org.eclipse.jst.jee.archive.AbstractArchiveSaveAdapter.save(AbstractArchiveSaveAdapter.java:71)
+	... 28 more
+
+!ENTRY org.eclipse.ui.ide 4 4 2013-04-15 08:45:48.625
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 2 1 2013-04-15 08:45:48.625
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2013-04-15 08:45:48.625
+!MESSAGE The project description file (.project) for 'Employeeexpensemanagement' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2013-04-15 08:45:48.625
+!MESSAGE The project description file (.project) for 'RemoteSystemsTempFiles' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2013-04-15 08:45:48.625
+!MESSAGE The project description file (.project) for 'Tgmcfinal' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2013-04-15 08:45:48.625
+!MESSAGE The project description file (.project) for 'Tgmcfinalnw' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2013-04-15 08:45:48.625
+!MESSAGE The project description file (.project) for 'final' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2013-04-15 08:45:48.625
+!MESSAGE The project description file (.project) for 'tgmc sample' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2013-04-15 08:45:48.625
+!MESSAGE The project description file (.project) for 'tgmc sample1' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.apache.geronimo.st.v30.core 4 0 2013-04-15 08:45:49.109
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.apache.geronimo.st.v30.core.Activator.stop() of bundle org.apache.geronimo.st.v30.core.
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:791)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:510)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:566)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1206)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:592)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:257)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:215)
+	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:284)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:692)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:600)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:399)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+Caused by: java.lang.NullPointerException
+	at org.apache.geronimo.st.v30.core.persist.impl.FilePersistenceManager.setDestination(FilePersistenceManager.java:138)
+	at org.apache.geronimo.st.v30.core.ModuleArtifactMapper.save(ModuleArtifactMapper.java:221)
+	at org.apache.geronimo.st.v30.core.Activator.stop(Activator.java:162)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:771)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:764)
+	... 18 more
+Root exception:
+java.lang.NullPointerException
+	at org.apache.geronimo.st.v30.core.persist.impl.FilePersistenceManager.setDestination(FilePersistenceManager.java:138)
+	at org.apache.geronimo.st.v30.core.ModuleArtifactMapper.save(ModuleArtifactMapper.java:221)
+	at org.apache.geronimo.st.v30.core.Activator.stop(Activator.java:162)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:771)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:764)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:510)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:566)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1206)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:592)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:257)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:215)
+	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:284)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:692)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:600)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:399)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+
+!ENTRY org.apache.geronimo.st.core 4 0 2013-04-15 08:45:49.109
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.apache.geronimo.st.core.Activator.stop() of bundle org.apache.geronimo.st.core.
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:791)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:510)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:566)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1206)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:592)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:257)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:215)
+	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:284)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:692)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:600)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:399)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+Caused by: java.lang.NullPointerException
+	at org.apache.geronimo.st.core.ModuleArtifactMapper.save(ModuleArtifactMapper.java:104)
+	at org.apache.geronimo.st.core.Activator.stop(Activator.java:141)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:771)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:764)
+	... 18 more
+Root exception:
+java.lang.NullPointerException
+	at org.apache.geronimo.st.core.ModuleArtifactMapper.save(ModuleArtifactMapper.java:104)
+	at org.apache.geronimo.st.core.Activator.stop(Activator.java:141)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:771)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:764)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:510)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:566)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1206)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:592)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:257)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:215)
+	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:284)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:692)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:600)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:399)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)

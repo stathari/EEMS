@@ -1,0 +1,29 @@
+package com.dao;
+
+import java.sql.PreparedStatement;
+
+import com.tgmc.Adminlogin;
+import com.util.*;
+public class Adminlogindao {
+	
+	String updateAdmin = "update Salary SET  ADMIN_PASSWORD=? where  ADMIN_ID=?";
+	String selectAdmin = "select * from Salary where SAL_ID=?";
+	
+	
+	public boolean updateAdmin(Adminlogin p)
+	{
+		try{
+		PreparedStatement ps = con.prepareStatement(updateAdmin);
+		ps.setString(1, p.getAdminid());
+		ps.setString(2, p.getPassword());
+		ps.executeUpdate();
+		return true;
+		}
+		catch(Exception e){
+			e.printStackTrace();
+			return false;
+		}
+	}
+	
+
+}

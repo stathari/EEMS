@@ -1,0 +1,11 @@
+package com.dao;
+
+public class Adminlogindao {
+	
+	String insertSalary= "insert into Salary values(?,?)";
+	String updateSalary = "update Salary SET  ADMIN_PASSWORD=? where  ADMIN_ID=?";
+	
+	
+	
+
+}

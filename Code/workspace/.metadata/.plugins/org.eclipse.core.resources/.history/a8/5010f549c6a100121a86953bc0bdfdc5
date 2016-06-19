@@ -1,0 +1,56 @@
+package com.tgmc;
+
+public class Vouchertl {
+
+	String vouid;
+	String exptype;
+	float exp;
+	String notes;
+	String info;
+	public String getVouid() {
+		return vouid;
+	}
+	public void setVouid(String vouid) {
+		this.vouid = vouid;
+	}
+	public String getExptype() {
+		return exptype;
+	}
+	public void setExptype(String exptype) {
+		this.exptype = exptype;
+	}
+	public float getExp() {
+		return exp;
+	}
+	public void setExp(float exp) {
+		this.exp = exp;
+	}
+	public String getNotes() {
+		return notes;
+	}
+	public void setNotes(String notes) {
+		this.notes = notes;
+	}
+	public String getInfo() {
+		return info;
+	}
+	public void setInfo(String info) {
+		this.info = info;
+	}
+	public Vouchertl(String vouid, String exptype, float exp, String notes,
+			String info) {
+		super();
+		this.vouid = vouid;
+		this.exptype = exptype;
+		this.exp = exp;
+		this.notes = notes;
+		this.info = info;
+	}
+	public Vouchertl() {
+		super();
+	}
+	
+	
+	
+	
+}

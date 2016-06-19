@@ -1,0 +1,35 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1" import="com.dao.*"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+  <%
+  String username = request.getParameter("uname");
+  String pwd = request.getParameter("pwd");
+  LoginDAO login= new LoginDAO();
+  int roleID = login.isValidUser(username, pwd);
+   if(roleID==1){
+	   response.sendRedirect("stu_func.jsp");
+   }
+   else if(roleID==2){
+	   response.sendRedirect("studhome.jsp");
+   }
+   else if(roleID==3){
+	   response.sendRedirect("parenthome.jsp");
+   }
+   else if(roleID==4){
+	   response.sendRedirect("emphome.jsp");
+   }
+   else if(roleID==0){
+	   out.println("invalid user name and pwd");
+   }
+   else
+	   out.println("there is a problem check the console");
+	   
+  %>
+</body> 
+</html>
